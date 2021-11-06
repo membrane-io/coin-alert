@@ -22,17 +22,13 @@
                     },
                     {
                         "name": "eth",
-                        "type": "Coin",
+                        "type": "mc-coinmarket:Coin",
                         "params": [
                             {
                                 "name": "symbol",
                                 "type": "String"
                             }
                         ]
-                    },
-                    {
-                        "name": "sendSms",
-                        "type": "String"
                     }
                 ],
                 "actions": [
