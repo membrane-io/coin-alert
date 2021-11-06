@@ -1,0 +1,51 @@
+{
+    "dependencies": {
+        "coinmarket": "mc-coinmarket:",
+        "clock": "sys-clock:",
+        "slack": "mc-slack:"
+    },
+    "config": {},
+    "schema": {
+        "types": [
+            {
+                "name": "Root",
+                "fields": [
+                    {
+                        "name": "btc",
+                        "type": "mc-coinmarket:Coin",
+                        "params": [
+                            {
+                                "name": "symbol",
+                                "type": "String"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "eth",
+                        "type": "Coin",
+                        "params": [
+                            {
+                                "name": "symbol",
+                                "type": "String"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "sendSms",
+                        "type": "String"
+                    }
+                ],
+                "actions": [
+                    {
+                        "name": "startBTCMonitor",
+                        "type": "String"
+                    },
+                    {
+                        "name": "sendSlackMsg",
+                        "type": "String"
+                    }
+                ]
+            }
+        ]
+    }
+}
